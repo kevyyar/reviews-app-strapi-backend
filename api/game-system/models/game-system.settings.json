@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_systems",
+  "info": {
+    "name": "gameSystem"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "reviews": {
+      "via": "game_systems",
+      "collection": "review"
+    }
+  }
+}

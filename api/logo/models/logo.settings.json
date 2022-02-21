@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "logos",
+  "info": {
+    "name": "nav_menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "home_link": {
+      "type": "string"
+    },
+    "reviews_link": {
+      "type": "string"
+    }
+  }
+}

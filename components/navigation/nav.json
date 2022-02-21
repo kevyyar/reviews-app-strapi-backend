@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_navigation_navs",
+  "info": {
+    "name": "nav",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.link"
+    },
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

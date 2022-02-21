@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "name": "review",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer",
+      "max": 10,
+      "min": 1
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "game_systems": {
+      "collection": "game-system",
+      "via": "reviews",
+      "dominant": true
+    }
+  }
+}

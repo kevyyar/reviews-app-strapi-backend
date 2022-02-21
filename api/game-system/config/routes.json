@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/game-systems",
+      "handler": "game-system.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-systems/count",
+      "handler": "game-system.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/game-systems/:id",
+      "handler": "game-system.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/game-systems",
+      "handler": "game-system.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/game-systems/:id",
+      "handler": "game-system.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/game-systems/:id",
+      "handler": "game-system.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
